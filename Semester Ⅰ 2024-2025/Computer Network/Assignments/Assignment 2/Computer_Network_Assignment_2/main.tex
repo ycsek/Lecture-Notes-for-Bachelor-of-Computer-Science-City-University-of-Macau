@@ -1,0 +1,130 @@
+%!TeX program = xelatex
+\documentclass[12pt,hyperref,a4paper,UTF8]{ctexart}
+\usepackage{homework}
+
+%%-------------------------------正文开始---------------------------%%
+\begin{document}
+
+%%-----------------------封面--------------------%%
+\cover
+
+%%------------------摘要-------------%%
+%\begin{abstract}
+%
+%在此填写摘要内容
+%
+%\end{abstract}
+
+\thispagestyle{empty} % 首页不显示页码
+
+%%--------------------------目录页------------------------%%
+\newpage
+\tableofcontents
+
+%%------------------------正文页从这里开始-------------------%
+\newpage
+
+%%可选择这里也放一个标题
+%\begin{center}
+%    \title{ \Huge \textbf{{标题}}}
+%\end{center}
+
+% ==============
+% =    规则    =
+% ==============
+\section{规则}
+\begin{enumerate}[I]
+    \item 在规定时间内不能提交作业者，零分；
+
+    \item 没有推导过程，只列出答案者，零分；
+
+    \item 格式混乱，无法阅读者，零分；
+
+    \item 不懂就问，不会就学。任何经验都是后天积累的。
+
+    \item 关于LaTeX的一切，国内外的网站都有详尽的教学视频。例：
+    \begin{itemize}
+        \item \href{https://www.bilibili.com/video/BV1Jy4y1p76e/?vd_source=2c0f6624843da61e86c7e8a2b75de875}{Bilibili}
+
+        \item \href{https://www.youtube.com/watch?v=Jp0lPj2-DQA&list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73}{YouTube}
+    \end{itemize}
+\end{enumerate}
+
+\newpage
+
+% ==============
+% =    习题    =
+% ==============
+\section{习题}
+
+\subsection{物理层的概念}
+\textbf{问：}物理层要解决哪些问题？物理层的主要特点是什么？
+
+\textbf{答：}TODO
+
+\subsection{物理层的接口}
+\textbf{问：}物理层的接口有哪几个方面的特性？各包含什么内容？
+
+\textbf{答：}TODO
+
+\subsection{码元与振幅调制}
+\textbf{问：}假定某信道受奈氏准则限制的最高码元速率为$20,000$码元/秒。如果采用振幅调制，把码元的振幅划分为16个不同等级来传送，那么可以获得多高的数据率（bit/s）？
+
+\textbf{答：}TODO
+\begin{equation}\label{eq:2.3}
+\begin{aligned}
+    E = mc^2
+\end{aligned}
+\end{equation}
+
+\subsection{信号衰减}
+\textbf{问：}假定有一种双绞线的衰减是$0.7$dB/km（在1kHz时），若容许有$20$dB的衰减，试问
+\begin{itemize}
+    \item 使用这种双绞线的链路的工作距离有多长？
+
+    \item 如果要使这种双绞线的工作距离增大到$100$km,问应当使衰减降低到多少？
+\end{itemize}
+
+
+\textbf{答：}TODO
+\begin{equation}\label{eq:2.4}
+\begin{aligned}
+    E = mc^2
+\end{aligned}
+\end{equation}
+
+\subsection{信道复用}
+\textbf{问：}为什么要使用信道复用技术？常用的信道复用技术有哪些？
+
+\textbf{答：}TODO
+
+\subsection{CDMA}
+\textbf{问：}共有$4$个站进行码分多址CDMA通信，四个站的码片序列如\autoref{tab:cdma}所示。
+\begin{table}[t!]
+    \centering
+    \begin{tabular}{cc}
+       A: $(-1, -1, -1, +1, +1, -1, +1, +1)$  & B: $(-1, -1, +1, -1, +1, +1, +1, -1)$ \\
+       C: $(-1, +1, -1, +1, +1, +1, -1, -1)$  & D: $(-1, +1, -1, -1, -1, -1, +1, -1)$
+    \end{tabular}
+    \caption{码片序列}
+    \label{tab:cdma}
+\end{table}
+现收到这样的码片序列：$(-1, +1, -3, +1, -1, -3, +1, +1)$。
+问
+\begin{itemize}
+    \item 哪个站发送数据了？
+    
+    \item 发送数据的站发送的是$1$还是$0$？
+\end{itemize}
+
+
+\textbf{答：}TODO
+\begin{equation}\label{eq:2.6}
+\begin{aligned}
+    E = mc^2
+\end{aligned}
+\end{equation}
+
+
+
+\end{document}

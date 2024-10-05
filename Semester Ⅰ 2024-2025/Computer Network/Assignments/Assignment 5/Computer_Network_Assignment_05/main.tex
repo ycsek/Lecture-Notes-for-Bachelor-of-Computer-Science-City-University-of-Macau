@@ -1,0 +1,140 @@
+%!TeX program = xelatex
+\documentclass[12pt,hyperref,a4paper,UTF8]{ctexart}
+\usepackage{homework}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+%%-------------------------------正文开始---------------------------%%
+\begin{document}
+
+%%-----------------------封面--------------------%%
+\cover
+
+%%------------------摘要-------------%%
+%\begin{abstract}
+%
+%在此填写摘要内容
+%
+%\end{abstract}
+
+\thispagestyle{empty} % 首页不显示页码
+
+%%--------------------------目录页------------------------%%
+\newpage
+\tableofcontents
+
+%%------------------------正文页从这里开始-------------------%
+\newpage
+
+%%可选择这里也放一个标题
+%\begin{center}
+%    \title{ \Huge \textbf{{标题}}}
+%\end{center}
+
+% ==============
+% =    规则    =
+% ==============
+\section{规则}
+\begin{enumerate}[label=\Roman*]
+    \item DDL为每周日的23:59；
+
+    \item 每次课前，评得示范作业的同学会给出自己的标准答案。如果对评分有不同看法，欢迎在听完示范作业之后，当面提出异议；
+    
+    \item 在规定时间内不能提交作业者，零分；
+
+    \item 没有推导过程，只列出答案者，零分；
+
+    \item 格式混乱，无法阅读者，零分；
+
+    \item 照抄答案者，零分；
+
+    \item 无法使用LaTeX完成作业者，零分；
+
+    \item 不懂就问，不会就学。任何经验都是后天积累的；
+
+    \item 关于LaTeX的一切，国内外的网站都有详尽的教学视频。例：
+    \begin{itemize}
+        \item \href{https://www.bilibili.com/video/BV1Jy4y1p76e/?vd_source=2c0f6624843da61e86c7e8a2b75de875}{Bilibili}
+
+        \item \href{https://www.youtube.com/watch?v=Jp0lPj2-DQA&list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73}{YouTube}
+    \end{itemize}
+\end{enumerate}
+
+\newpage
+
+% ==============
+% =    习题    =
+% ==============
+\section{习题}
+
+\subsection{ARP-1}
+\textbf{问：}
+\begin{enumerate}[label=\Roman*,leftmargin=2.2\parindent]
+    \item 试解释为什么ARP高速缓存每存入一个项目就要设置10$\sim$20分钟的超时计时器。这个时间设置得太大或太小会出现什么问题？
+
+    \item 至少举出两种不需要发送ARP 请求分组的情况（即不需要请求将某个目的IP地址解析为相应的MAC地址）。
+\end{enumerate}
+
+\textbf{答：}
+TODO
+
+\subsection{ARP-2}
+\textbf{问：}
+主机A发送IP数据报给主机B，途中经过了5 个路由器。试问在IP数据报的发送过程中总共使用了几次ARP?
+
+\textbf{答：}
+TODO
+
+\subsection{路由器转发表}
+\textbf{问：}
+设某路由器建立了转发表\ref{tab:转发表}：
+\begin{table}[h!]
+    \centering
+    \renewcommand{\arraystretch}{1}
+    \setlength{\tabcolsep}{30pt}
+    \begin{tabular}{l|r}
+    \toprule
+    前缀匹配    &   下一跳\\
+    \midrule
+    192.4.153.0/26  &   R3\\
+    128.96.39.0/25  &   接口$m_0$\\
+    128.96.39.128/25    &   接口$m_1$\\
+    128.96.40.0 /25 &   $R_2$\\
+    192.4.153.0/26  &   $R_3$\\
+    *（默认）   &   $R_4$\\
+    \bottomrule
+    \end{tabular}
+    \caption{转发表}
+    \label{tab:转发表}
+\end{table}
+
+现共收到5个分组，其目的地址分别为：
+\begin{enumerate}[label=(\arabic*),leftmargin=2.2\parindent]
+    \item 128.96.39.10
+    \item 128.96.40.12
+    \item 128.96.40.151
+    \item 192.4.153.17
+    \item 192.4.153.90
+\end{enumerate}
+
+试分别计算其下一跳。
+
+\textbf{答：}
+TODO
+
+\subsection{最大/最小IP}
+\textbf{问：}
+某单位分配到一个地址块$129.250/16$。该单位有$4000$台计算机，平均分布在$16$个不同的地点。试给每一个地点分配一个地址块，并算出每个地址块中IP地址的最小值和最大值。
+
+\textbf{答：}
+TODO
+
+\subsection{数据报}
+\textbf{问：}
+一个数据报长度为$4000$字节（固定首部长度）。现在经过一个网络传送，但此网
+络能够传送的最大数据长度为$1500$字节。试问应当划分为几个短些的数据报片？各数据报片的数据字段长度、片偏移字段和MF标志应为何数值？
+
+\textbf{答：}
+TODO
+
+\end{document}

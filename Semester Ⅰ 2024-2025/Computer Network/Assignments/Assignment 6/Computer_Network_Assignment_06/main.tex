@@ -1,0 +1,159 @@
+%!TeX program = xelatex
+\documentclass[12pt,hyperref,a4paper,UTF8]{ctexart}
+\usepackage{homework}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+%%-------------------------------正文开始---------------------------%%
+\begin{document}
+
+%%-----------------------封面--------------------%%
+\cover
+
+%%------------------摘要-------------%%
+%\begin{abstract}
+%
+%在此填写摘要内容
+%
+%\end{abstract}
+
+\thispagestyle{empty} % 首页不显示页码
+
+%%--------------------------目录页------------------------%%
+\newpage
+\tableofcontents
+
+%%------------------------正文页从这里开始-------------------%
+\newpage
+
+%%可选择这里也放一个标题
+%\begin{center}
+%    \title{ \Huge \textbf{{标题}}}
+%\end{center}
+
+% ==============
+% =    规则    =
+% ==============
+\section{规则}
+\begin{enumerate}[label=\Roman*]
+    \item DDL为每周日的23:59；
+
+    \item 每次课前，评得示范作业的同学会给出自己的标准答案。如果对评分有不同看法，欢迎在听完示范作业之后，当面提出异议；
+    
+    \item 在规定时间内不能提交作业者，零分；
+
+    \item 没有推导过程，只列出答案者，零分；
+
+    \item 格式混乱，无法阅读者，零分；
+
+    \item 照抄答案者，零分；
+
+    \item 无法使用LaTeX完成作业者，零分；
+
+    \item 不懂就问，不会就学。任何经验都是后天积累的；
+
+    \item 关于LaTeX的一切，国内外的网站都有详尽的教学视频。例：
+    \begin{itemize}
+        \item \href{https://www.bilibili.com/video/BV1Jy4y1p76e/?vd_source=2c0f6624843da61e86c7e8a2b75de875}{Bilibili}
+
+        \item \href{https://www.youtube.com/watch?v=Jp0lPj2-DQA&list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73}{YouTube}
+    \end{itemize}
+\end{enumerate}
+
+\newpage
+
+% ==============
+% =    习题    =
+% ==============
+\section{习题}
+
+\subsection{地址前缀匹配}
+\textbf{问：}
+以下地址前缀中的哪一个地址与$2.52.90.140$ 匹配？请说明理由。
+\begin{enumerate}[label=\Roman*),leftmargin=2.2\parindent]
+    \item 0/4; 
+    \item 32/4; 
+    \item 4/6; 
+    \item 80/4。
+\end{enumerate}
+
+\textbf{答：}
+TODO
+
+\subsection{掩码与网络前缀}
+\textbf{问：}
+与下列掩码相对应的网络前缀各有多少位？
+\begin{enumerate}[label=\Roman*),leftmargin=2.2\parindent]
+    \item $192.0.0.0$;
+    \item $240.0.0.0$;
+    \item $255.224.0.0$;
+    \item $255.255.255.252$。
+\end{enumerate}
+
+\textbf{答：}
+TODO
+
+\subsection{路由表更新}
+\textbf{问：}
+假定网络中的路由器B的路由表如表\ref{tab:router_b}所示:
+\begin{table}[h!]
+    \centering
+    \caption{路由器B的路由表}
+    \begin{tabular}{c|c|c}
+    \toprule
+    目的网络 & 距离 & 下一跳路由器\\
+    \midrule
+    $N_1$ & $7$ & $A$\\
+    $N_2$ & $2$ & $C$\\
+    $N_6$ & $8$ & $F$\\
+    $N_8$ & $4$ & $E$\\
+    $N_9$ & $4$ & $F$\\
+    \bottomrule
+    \end{tabular}
+    \label{tab:router_b}
+\end{table}
+
+现在B收到从C发来的路由信息，如表\ref{tab:updates}所示：
+\begin{table}[h!]
+    \centering
+    \caption{路由器C至路由器B的更新信息}
+    \begin{tabular}{c|c}
+    \toprule
+    目的网络 & 距离\\
+    \midrule
+    $N_2$ & $4$\\
+    $N_3$ & $8$\\
+    $N_6$ & $4$\\
+    $N_8$ & $3$\\
+    $N_9$ & $5$\\
+    \bottomrule
+    \end{tabular}
+    \label{tab:updates}
+\end{table}
+
+试求出路由器B更新后的路由表（详细说明每一个步骤）。
+
+\textbf{答：}
+TODO
+
+\subsection{IPv4地址转换}
+\textbf{问：}
+试把下列IPv4 地址从二进制记法转换为点分十进制记法：
+\begin{enumerate}[label=\Roman*)]
+    \item $10000001 \ 00001011 \ 00001011 \ 11101111$
+    \item $11000001 \ 10000011 \ 00011011 \ 11111111$
+    \item $11100111 \ 11011011 \ 10001011 \ 01101111$
+    \item $11111001 \ 10011011 \ 11111011 \ 00001111$
+\end{enumerate}
+
+\textbf{答：}
+TODO
+
+\subsection{IPv4过渡至IPv6}
+\textbf{问：}
+从IPv4过渡到IPv6的方法有哪些？
+
+\textbf{答：}
+TODO
+
+\end{document}

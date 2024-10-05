@@ -1,0 +1,109 @@
+%!TeX program = xelatex
+\documentclass[12pt,hyperref,a4paper,UTF8]{ctexart}
+\usepackage{homework}
+\usepackage{booktabs}
+
+%%-------------------------------正文开始---------------------------%%
+\begin{document}
+
+%%-----------------------封面--------------------%%
+\cover
+
+%%------------------摘要-------------%%
+%\begin{abstract}
+%
+%在此填写摘要内容
+%
+%\end{abstract}
+
+\thispagestyle{empty} % 首页不显示页码
+
+%%--------------------------目录页------------------------%%
+\newpage
+\tableofcontents
+
+%%------------------------正文页从这里开始-------------------%
+\newpage
+
+%%可选择这里也放一个标题
+%\begin{center}
+%    \title{ \Huge \textbf{{标题}}}
+%\end{center}
+
+% ==============
+% =    规则    =
+% ==============
+\section{规则}
+\begin{enumerate}[I]
+    \item DDL为每周日的23:59；
+    
+    \item 在规定时间内不能提交作业者，零分；
+
+    \item 没有推导过程，只列出答案者，零分；
+
+    \item 格式混乱，无法阅读者，零分；
+
+    \item 照抄答案者，零分；
+
+    \item 不懂就问，不会就学。任何经验都是后天积累的；
+
+    \item 关于LaTeX的一切，国内外的网站都有详尽的教学视频。例：
+    \begin{itemize}
+        \item \href{https://www.bilibili.com/video/BV1Jy4y1p76e/?vd_source=2c0f6624843da61e86c7e8a2b75de875}{Bilibili}
+
+        \item \href{https://www.youtube.com/watch?v=Jp0lPj2-DQA&list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73}{YouTube}
+    \end{itemize}
+\end{enumerate}
+
+\newpage
+
+% ==============
+% =    习题    =
+% ==============
+\section{习题}
+
+\subsection{IP地址表示}
+\textbf{问：}
+IP地址如何表示？
+
+\textbf{答：}
+TODO
+
+\subsection{IP地址特点}
+\textbf{问：}
+IP地址的主要特点是什么？
+
+\textbf{答：}
+TODO
+
+\subsection{IP地址 vs. MAC地址}
+\textbf{问：}
+试说明IP地址与MAC地址的区别。为什么要使用这两种不同的地址？
+
+\textbf{答：}
+TODO
+
+\subsection{IP数据报首部检验-1}
+\textbf{问：}
+IP数据报中的首部检验和并不检验数据报中的数据。这样做的最大好处是什么？
+坏处是什么？
+
+\textbf{答：}
+TODO
+
+\subsection{IP数据报首部检验-2}
+\textbf{问：}
+当某个路由器发现一个IP 数据报的首部检验和有差错时，为什么采取丢弃的办
+法而不是要求源站重传此数据报？计算首部检验和为什么不采用CRC 检验码？
+
+\textbf{答：}
+TODO
+
+\subsection{最大传输单元}
+\textbf{问：}
+什么是最大传送单元MTU? 它和IP数据报首部中的哪个字段有关系？
+
+\textbf{答：}
+TODO
+
+\end{document}
